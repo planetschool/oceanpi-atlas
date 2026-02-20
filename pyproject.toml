@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oceanpi-atlas"
+version = "0.1.0"
+description = "Atlas Scientific I2C helper (AtlasI2C.py) packaged for easy install"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "See LICENSE / upstream Atlas Scientific license" }
+authors = [{ name = "Planet School / Ocean Pi" }]
+dependencies = [smbus2]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
